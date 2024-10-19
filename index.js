@@ -27,7 +27,7 @@ const client = new Discord.Client({
     allowedMentions: { parse: ['users', 'roles', 'everyone'] }
 });
 const fs = require("fs");
-const prefix = "c."
+const prefix = "h."
 client.commands = new Discord.Collection();
 const commands = fs.readdirSync("./Commands").filter(file => file.endsWith(".js"));
 for (file of commands) {
@@ -415,8 +415,8 @@ client.on("messageCreate", message => {
             const ErythinaRelpyGreetings = [
                 `Oh, you’re here. nice to meet you.`,
                 `Oh, it’s you. hello..`,
-                `Pretend that I am not here<:Stare_erythrina:1238029119632048159>`,
-                `Hi<:Stare_erythrina:1238029119632048159>`
+                `Pretend that I am not here`,
+                `Hi`
             ];
             const randomReplyGreeting = ErythinaRelpyGreetings[Math.floor(Math.random() * ErythinaRelpyGreetings.length)];
             message.reply(randomReplyGreeting);
