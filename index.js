@@ -497,7 +497,7 @@ client.on('ready', async () => {
 
     //every 10 minutes
     //scheduleRndmMessage('*/10 * * * *', 'America/New_York', '1237979377363320916');
-    //scheduleTempMessage('*/1 * * * *', 'America/New_York', 'test1', "1237979377363320916",1000);
+    scheduleTempMessage('*/1 * * * *', 'America/New_York', 'test', "1297465766018289714",1000);
 
     
      //Reminders of reminder channel
