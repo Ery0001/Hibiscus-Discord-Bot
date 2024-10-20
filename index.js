@@ -484,91 +484,91 @@ client.on('ready', async () => {
     })
 
     // Schedule multiple messages
-    // scheduleTempMessage('0 20 * * *', 'America/New_York', '@everyone Guild activities are approaching in 30 minutes.', "1237979376872718439",300000);
-    // scheduleTempMessage('20 20 * * *', 'America/New_York', '@everyone Guild activities are approaching in 10 minutes.', "1237979376872718439",300000);
+    // scheduleTempMessage('0 20 * * *', 'America/Halifax', '@everyone Guild activities are approaching in 30 minutes.', "1237979376872718439",300000);
+    // scheduleTempMessage('20 20 * * *', 'America/Halifax', '@everyone Guild activities are approaching in 10 minutes.', "1237979376872718439",300000);
     
-    // scheduleTempMessage('25 20 * * *', 'America/New_York', '@everyone Time for the Guild bath in 5 minutes. Join us or miss out, your loss!', "1237979376872718439",600000);
-    // scheduleTempMessage('30 20 * * *', 'America/New_York', 'Guild bath is starting!<:Stare_erythrina:1238029119632048159>', "1237979376872718439",300000);
-    // scheduleTempMessage('35 20 * * *', 'America/New_York', '@everyone Get ready for the Guild boss battle in 5 minutes! Don\'t slack off now, we need everyone!', "1237979376872718439",600000);
-    // scheduleTempMessage('40 20 * * *', 'America/New_York', 'Guild boss is starting!<:Stare_erythrina:1238029119632048159>', "1237979376872718439",300000);
-    // scheduleTempMessage('55 20 * * 2,4,6', 'America/New_York', '@everyone The Guild war is about to begin in 5 minutes! Prepare yourself!', "1237979376872718439",1200000);
-    // scheduleTempMessage('0 21 * * 2,4,6', 'America/New_York', 'Guild war is starting!<:Erythrina_happy:1249365602397716540>', "1237979376872718439",900000);
-    // scheduleRndmMessage('30 6 * * *', 'America/New_York', "1237979376872718439");
+    // scheduleTempMessage('25 20 * * *', 'America/Halifax', '@everyone Time for the Guild bath in 5 minutes. Join us or miss out, your loss!', "1237979376872718439",600000);
+    // scheduleTempMessage('30 20 * * *', 'America/Halifax', 'Guild bath is starting!<:Stare_erythrina:1238029119632048159>', "1237979376872718439",300000);
+    // scheduleTempMessage('35 20 * * *', 'America/Halifax', '@everyone Get ready for the Guild boss battle in 5 minutes! Don\'t slack off now, we need everyone!', "1237979376872718439",600000);
+    // scheduleTempMessage('40 20 * * *', 'America/Halifax', 'Guild boss is starting!<:Stare_erythrina:1238029119632048159>', "1237979376872718439",300000);
+    // scheduleTempMessage('55 20 * * 2,4,6', 'America/Halifax', '@everyone The Guild war is about to begin in 5 minutes! Prepare yourself!', "1237979376872718439",1200000);
+    // scheduleTempMessage('0 21 * * 2,4,6', 'America/Halifax', 'Guild war is starting!<:Erythrina_happy:1249365602397716540>', "1237979376872718439",900000);
+    // scheduleRndmMessage('30 6 * * *', 'America/Halifax', "1237979376872718439");
 
     //every 10 minutes
-    //scheduleRndmMessage('*/10 * * * *', 'America/New_York', '1237979377363320916');
-    scheduleTempMessage('*/1 * * * *', 'America/New_York', 'test', "1297465766018289714",1000);
+    //scheduleRndmMessage('*/10 * * * *', 'America/Halifax', '1237979377363320916');
+    scheduleTempMessage('*/1 * * * *', 'America/Halifax', 'test', "1297465766018289714",1000);
 
     
      //Reminders of reminder channel
-    scheduleRemindersChannel('0 7 * * *', 'America/New_York', "1237979376872718439",3600000);
-    //scheduleRemindersChannel('0 12 * * *', 'America/New_York', "1237979376872718439",3600000);
-    //scheduleRemindersChannel('30 21 * * *', 'America/New_York', "1237979376872718439",3600000);
+    scheduleRemindersChannel('0 7 * * *', 'America/Halifax', "1237979376872718439",3600000);
+    //scheduleRemindersChannel('0 12 * * *', 'America/Halifax', "1237979376872718439",3600000);
+    //scheduleRemindersChannel('30 21 * * *', 'America/Halifax', "1237979376872718439",3600000);
 
     // Schedule multiple embeds
     // Official{
      //Server Reset
 
-    scheduleEmbed('0 6 * * *', 'America/New_York', '### [NOTICE]\nServer events and activities have been reset.', "1297307981939212379", 0);
+    scheduleEmbed('0 6 * * *', 'America/Halifax', '### [NOTICE]\nServer events and activities have been reset.', "1297307981939212379", 0);
      //Guild war weekly reward
-    scheduleEmbed('0 22 * * 6', 'America/New_York', '### [NOTICE]\nWeekly guild reward is available.', "1297307981939212379", 0);
+    scheduleEmbed('0 22 * * 6', 'America/Halifax', '### [NOTICE]\nWeekly guild reward is available.', "1297307981939212379", 0);
      // Guild Activity
-    scheduleEmbed('30 20 * * *', 'America/New_York', '### [NOTICE]\nGuild Bath has started!', "1297307981939212379", 1);
-    scheduleEmbed('40 20 * * *', 'America/New_York', '### [NOTICE]\nGuild Boss has started!', "1297307981939212379", 1);
-    scheduleEmbed('0 21 * * 2,4,6', 'America/New_York', '### [NOTICE]\nGuild War has started!', "1297307981939212379", 1);
+    scheduleEmbed('30 20 * * *', 'America/Halifax', '### [NOTICE]\nGuild Bath has started!', "1297307981939212379", 1);
+    scheduleEmbed('40 20 * * *', 'America/Halifax', '### [NOTICE]\nGuild Boss has started!', "1297307981939212379", 1);
+    scheduleEmbed('0 21 * * 2,4,6', 'America/Halifax', '### [NOTICE]\nGuild War has started!', "1297307981939212379", 1);
      // Instrumental Performance
-    scheduleEmbed('0 6 * * 1', 'America/New_York', '### [NOTICE]\nInstrumental Performance EXP in Life has been refreshed', "1297307981939212379", 0);
+    scheduleEmbed('0 6 * * 1', 'America/Halifax', '### [NOTICE]\nInstrumental Performance EXP in Life has been refreshed', "1297307981939212379", 0);
      // Special Quest of Tess
-    scheduleEmbed('0 6 * * 1', 'America/New_York', '### [NOTICE]\nThe special quest of Tess is available.', "1297307981939212379", 0);
+    scheduleEmbed('0 6 * * 1', 'America/Halifax', '### [NOTICE]\nThe special quest of Tess is available.', "1297307981939212379", 0);
      // Elemental Realm
-    scheduleEmbed('0 6 * * *', 'America/New_York', '### [NOTICE]\nElemental Realm has been reset!', "1297307981939212379", 0);
+    scheduleEmbed('0 6 * * *', 'America/Halifax', '### [NOTICE]\nElemental Realm has been reset!', "1297307981939212379", 0);
      // Madness Raid
-    scheduleEmbed('55 9 * * 1,3,5,7', 'America/New_York', '### [NOTICE]\nMadness Raid is starting today from 9:00 to 21:30 (server time)!', "1297307981939212379", 0);
-    scheduleEmbed('30 23 * * 1,3,5,7', 'America/New_York', '### [NOTICE]\nMadness Raid is closing!', "1297307981939212379", 2);
+    scheduleEmbed('55 9 * * 1,3,5,7', 'America/Halifax', '### [NOTICE]\nMadness Raid is starting today from 9:00 to 21:30 (server time)!', "1297307981939212379", 0);
+    scheduleEmbed('30 23 * * 1,3,5,7', 'America/Halifax', '### [NOTICE]\nMadness Raid is closing!', "1297307981939212379", 2);
      // Abyss Ruin
-    scheduleEmbed('0 6 * * 2,4,6,7', 'America/New_York', '### [NOTICE]\nAbyss Ruin is available!', "1297307981939212379", 0);
+    scheduleEmbed('0 6 * * 2,4,6,7', 'America/Halifax', '### [NOTICE]\nAbyss Ruin is available!', "1297307981939212379", 0);
      // Time Trial 
-    scheduleEmbed('0 6 * * 1,3,5,7', 'America/New_York', '### [NOTICE]\nTime Trial is available!', "1297307981939212379", 0);
+    scheduleEmbed('0 6 * * 1,3,5,7', 'America/Halifax', '### [NOTICE]\nTime Trial is available!', "1297307981939212379", 0);
      // Disaster Crusade
-    scheduleEmbed('0 6 * * 1', 'America/New_York', '### [NOTICE]\nDisaster Crusade has been reset!', "1297307981939212379", 0);
+    scheduleEmbed('0 6 * * 1', 'America/Halifax', '### [NOTICE]\nDisaster Crusade has been reset!', "1297307981939212379", 0);
      // Burning Soul Battle
-    scheduleEmbed('55 19 * * 2,4,6,7', 'America/New_York', '### [NOTICE]\nBurning Soul Battle is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 19 * * 2,4,6,7', 'America/Halifax', '### [NOTICE]\nBurning Soul Battle is starting in 5 minutes!', "1297307981939212379", 1);
      // Starleaf Garden
-    /*scheduleEmbed('0 6 * * 2,4,6,7', 'America/New_York', '### [NOTICE]\nStarleaf Garden is starting!', "1237979376872718439", 1);*/
+    /*scheduleEmbed('0 6 * * 2,4,6,7', 'America/Halifax', '### [NOTICE]\nStarleaf Garden is starting!', "1237979376872718439", 1);*/
      // Shrine Rivalry
-    scheduleEmbed('0 6 * * 3-5', 'America/New_York', '### [NOTICE]\nShrine Rivalry is available!', "1297307981939212379", 0);
+    scheduleEmbed('0 6 * * 3-5', 'America/Halifax', '### [NOTICE]\nShrine Rivalry is available!', "1297307981939212379", 0);
      // Shrine Peak
-    scheduleEmbed('55 21 * * 6', 'America/New_York', '### [NOTICE]\nShrine Peak is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 21 * * 6', 'America/Halifax', '### [NOTICE]\nShrine Peak is starting in 5 minutes!', "1297307981939212379", 1);
      // Uncharted Battlefield
-    scheduleEmbed('55 12 * * 2,4,6', 'America/New_York', '### [NOTICE]\nUncharted Battlefield First Wave is starting in 5 minutes!', "1297307981939212379", 1);
-    scheduleEmbed('55 16 * * 2,4,6', 'America/New_York', '### [NOTICE]\nUncharted Battlefield Second Wave is starting in 5 minutes!', "1297307981939212379", 1);
-    scheduleEmbed('55 22 * * 2,4,6', 'America/New_York', '### [NOTICE]\nUncharted Battlefield Third Wave is starting in 5 minutes!', "1297307981939212379", 1);
-    scheduleEmbed('55 23 * * 2,4,6', 'America/New_York', '### [NOTICE]\nUncharted Battlefield Last Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 12 * * 2,4,6', 'America/Halifax', '### [NOTICE]\nUncharted Battlefield First Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 16 * * 2,4,6', 'America/Halifax', '### [NOTICE]\nUncharted Battlefield Second Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 22 * * 2,4,6', 'America/Halifax', '### [NOTICE]\nUncharted Battlefield Third Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 23 * * 2,4,6', 'America/Halifax', '### [NOTICE]\nUncharted Battlefield Last Wave is starting in 5 minutes!', "1297307981939212379", 1);
      // Top League
-    scheduleEmbed('55 20 * * 3,5,7', 'America/New_York', '### [NOTICE]\nTop League is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 20 * * 3,5,7', 'America/Halifax', '### [NOTICE]\nTop League is starting in 5 minutes!', "1297307981939212379", 1);
      // Thunderroar Recess
-    scheduleEmbed('55 19 * * 1,3,5', 'America/New_York', '### [NOTICE]\nThunderroar Recess is starting in 5 minutes!', "1297307981939212379", 1);
-    scheduleEmbed('55 21 * * 1,3,5', 'America/New_York', '### [NOTICE]\nThunderroar Recess is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 19 * * 1,3,5', 'America/Halifax', '### [NOTICE]\nThunderroar Recess is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 21 * * 1,3,5', 'America/Halifax', '### [NOTICE]\nThunderroar Recess is starting in 5 minutes!', "1297307981939212379", 1);
      // Crystal Battlefield
-    scheduleEmbed('55 12 * * 1,3,5,7', 'America/New_York', '### [NOTICE]\nCrystal Battlefield First Wave is starting in 5 minutes!', "1297307981939212379", 1);
-    scheduleEmbed('55 16 * * 1,3,5,7', 'America/New_York', '### [NOTICE]\nCrystal Battlefield Second Wave is starting in 5 minutes!', "1297307981939212379", 1);
-    scheduleEmbed('55 22 * * 1,3,5,7', 'America/New_York', '### [NOTICE]\nCrystal Battlefield Third Wave is starting in 5 minutes!', "1297307981939212379", 1);
-    scheduleEmbed('55 23 * * 1,3,5,7', 'America/New_York', '### [NOTICE]\nCrystal Battlefield Last Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 12 * * 1,3,5,7', 'America/Halifax', '### [NOTICE]\nCrystal Battlefield First Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 16 * * 1,3,5,7', 'America/Halifax', '### [NOTICE]\nCrystal Battlefield Second Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 22 * * 1,3,5,7', 'America/Halifax', '### [NOTICE]\nCrystal Battlefield Third Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('55 23 * * 1,3,5,7', 'America/Halifax', '### [NOTICE]\nCrystal Battlefield Last Wave is starting in 5 minutes!', "1297307981939212379", 1);
      // Scenic Quiz
-    scheduleEmbed('5 10 * * 1,4', 'America/New_York', '### [NOTICE]\nScenic Quiz is available today from 9:00 to 23:00 (server time)!', "1297307981939212379", 0);
+    scheduleEmbed('5 10 * * 1,4', 'America/Halifax', '### [NOTICE]\nScenic Quiz is available today from 9:00 to 23:00 (server time)!', "1297307981939212379", 0);
      // Miru Party
-    scheduleEmbed('5 10 * * 2,6', 'America/New_York', '### [NOTICE]\nMiru Party is available today from 9:00 to 23:00 (server time)!', "1297307981939212379", 0);
+    scheduleEmbed('5 10 * * 2,6', 'America/Halifax', '### [NOTICE]\nMiru Party is available today from 9:00 to 23:00 (server time)!', "1297307981939212379", 0);
      // Miru Marathon
-    scheduleEmbed('25 12 * * *', 'America/New_York', '### [NOTICE]\nMiru Marathon First Wave is starting in 5 minutes!', "1297307981939212379", 1);
-    scheduleEmbed('25 15 * * *', 'America/New_York', '### [NOTICE]\nMiru Marathon Second Wave is starting in 5 minutes!', "1297307981939212379", 1);
-    scheduleEmbed('25 18 * * *', 'America/New_York', '### [NOTICE]\nMiru Marathon Third Wave is starting in 5 minutes!', "1297307981939212379", 1);
-    scheduleEmbed('25 21 * * *', 'America/New_York', '### [NOTICE]\nMiru Marathon Last Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('25 12 * * *', 'America/Halifax', '### [NOTICE]\nMiru Marathon First Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('25 15 * * *', 'America/Halifax', '### [NOTICE]\nMiru Marathon Second Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('25 18 * * *', 'America/Halifax', '### [NOTICE]\nMiru Marathon Third Wave is starting in 5 minutes!', "1297307981939212379", 1);
+    scheduleEmbed('25 21 * * *', 'America/Halifax', '### [NOTICE]\nMiru Marathon Last Wave is starting in 5 minutes!', "1297307981939212379", 1);
      // Holy Fruit and Fog Island
-    scheduleEmbed('5 10 * * 3,5,7', 'America/New_York', '### [NOTICE]\nHoly Fruit and Fog Island is available today from 9:00 to 23:00 (server time)!', "1297307981939212379", 0);
+    scheduleEmbed('5 10 * * 3,5,7', 'America/Halifax', '### [NOTICE]\nHoly Fruit and Fog Island is available today from 9:00 to 23:00 (server time)!', "1297307981939212379", 0);
      //TEST
-    /*scheduleEmbed('23 0 * * *', 'America/New_York', '### [NOTICE]\nTEST TEST TEST!', "1237979376872718439", 0);
-    scheduleEmbed('23 0 * * *', 'America/New_York', '### [NOTICE]\nTEST TEST TEST!', "1237979376872718439", 1);
-    scheduleEmbed('23 0 * * *', 'America/New_York', '### [NOTICE]\nTEST TEST TEST!', "1237979376872718439", 2);*/
+    /*scheduleEmbed('23 0 * * *', 'America/Halifax', '### [NOTICE]\nTEST TEST TEST!', "1237979376872718439", 0);
+    scheduleEmbed('23 0 * * *', 'America/Halifax', '### [NOTICE]\nTEST TEST TEST!', "1237979376872718439", 1);
+    scheduleEmbed('23 0 * * *', 'America/Halifax', '### [NOTICE]\nTEST TEST TEST!', "1237979376872718439", 2);*/
     //}
 });
 
