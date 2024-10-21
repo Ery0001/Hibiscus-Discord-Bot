@@ -432,7 +432,7 @@ client.on("messageCreate", message => {
         }
         if (hasMention && hasCompliment1) {
             if (messageContent.length < 13) {
-            message.reply(`<:catto_tf:1241438766137086084>`);
+            message.reply(`...`);
          }
         }
         // if (hasInvite && hasLink) {
