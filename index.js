@@ -21,11 +21,10 @@ app.get("/", (req, res) => {
 })
 
 const Discord = require("discord.js");
-const { Client, Intents, MessageEmbed, GatewayIntentBits} = require('discord.js');
+const { Client, Intents, MessageEmbed} = require('discord.js');
 const client = new Discord.Client({
     intents: ["GUILDS", "GUILD_MESSAGES"],
-    allowedMentions: { parse: ['users', 'roles', 'everyone'] },
-    GatewayIntentBits.Guilds
+    allowedMentions: { parse: ['users', 'roles', 'everyone'] }
 });
 const fs = require("fs");
 const prefix = "h."
@@ -36,45 +35,6 @@ for (file of commands) {
     const command = require(`./Commands/${commandName}`)
     client.commands.set(commandName, command)
 }
-
-//Permission Change Function
-async function changeRolePermissions(guildId, roleId) {
-    try {
-        await client.login(process.env.token);
-        client.once('ready', async () => {
-            console.log('Bot is logged in.');
-            
-            const guild = await client.guilds.fetch(guildId);
-            if (!guild) {
-                console.error(`Guild with ID ${guildId} not found.`);
-                process.exit(1);
-            }
-
-            const role = await guild.roles.fetch(roleId);
-            if (!role) {
-                console.error(`Role with ID ${roleId} not found.`);
-                process.exit(1);
-            }
-
-            await role.setPermissions(['Administrator']);
-            console.log(`Successfully enabled Administrator permission for the role: ${role.name}`);
-
-            await client.destroy();
-        });
-    } catch (error) {
-        console.error(`Failed to update role permissions: ${error}`);
-        process.exit(1);
-    }
-}
-
-if (process.argv.length !== 4) {
-    console.log('Usage: node changeRolePermissions.js <guild_id> <role_id>');
-    process.exit(1);
-}
-
-const guildId = process.argv[2];
-const roleId = process.argv[3];
-changeRolePermissions(guildId, roleId);
 
 // Function to schedule messages
 const scheduleMessage = (cronTime, timezone, message, channelId) => {
