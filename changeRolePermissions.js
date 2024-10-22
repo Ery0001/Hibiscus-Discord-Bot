@@ -1,4 +1,6 @@
 //Permission Change Function
+//node changeRolePermissions.js <guild_id> <role_id>
+
 const { Client, GatewayIntentBits } = require('discord.js');
 
 // Create a new client instance
