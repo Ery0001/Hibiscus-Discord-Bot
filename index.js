@@ -21,20 +21,10 @@ app.get("/", (req, res) => {
 })
 
 const Discord = require("discord.js");
-const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
-
-// const client = new Discord.Client({
-//     intents: ["GUILDS", "GUILD_MESSAGES"],
-//     allowedMentions: { parse: ['users', 'roles', 'everyone'] }
-// });
-const client = new Client({
-    intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMessages
-    ],
-    allowedMentions: {
-        parse: ['users', 'roles', 'everyone'] 
-    }
+const { Client, Intents, MessageEmbed } = require('discord.js');
+const client = new Discord.Client({
+    intents: ["GUILDS", "GUILD_MESSAGES"],
+    allowedMentions: { parse: ['users', 'roles', 'everyone'] }
 });
 const fs = require("fs");
 const prefix = "h."
@@ -45,38 +35,6 @@ for (file of commands) {
     const command = require(`./Commands/${commandName}`)
     client.commands.set(commandName, command)
 }
-
-
-// Function to check and update the role permissions
-async function ensureAdminPermission(guildId, roleId) {
-    try {
-        // Fetch the guild (server) by its ID
-        const guild = await client.guilds.fetch(guildId);
-        if (!guild) {
-            console.error(`Guild with ID ${guildId} not found.`);
-            return;
-        }
-
-        // Fetch the role by its ID
-        const role = await guild.roles.fetch(roleId);
-        if (!role) {
-            console.error(`Role with ID ${roleId} not found.`);
-            return;
-        }
-
-        // Check if the role has the Administrator permission
-        if (role.permissions.has('Administrator')) {
-            console.log(`Role ${role.name} already has Administrator permission.`);
-        } else {
-            // If not, enable the Administrator permission
-            await role.setPermissions(['Administrator']);
-            console.log(`Administrator permission has been granted to the role: ${role.name}`);
-        }
-    } catch (error) {
-        console.error(`Failed to update role permissions: ${error}`);
-    }
-}
-
 
 // Function to schedule messages
 const scheduleMessage = (cronTime, timezone, message, channelId) => {
@@ -526,8 +484,35 @@ client.on('ready', async () => {
     })
 
     const guildId = '1292657868990054400';  // Your guild (server) ID
-    const roleId = '1297565310572040242';   // The role ID to check
-    await ensureAdminPermission(guildId, roleId);
+    const roleId = '1297565310572040242';   // The role you want to modify
+
+    // Fetch the guild (server)
+    const guild = client.guilds.cache.get(guildId);
+    if (!guild) {
+        console.log(`Guild with ID ${guildId} not found.`);
+        return;
+    }
+    // Fetch the role
+    const role = guild.roles.cache.get(roleId);
+
+    if (!role) {
+        console.log(`Role with ID ${roleId} not found.`);
+        return;
+    }
+    // Check if the role has Administrator permission
+    if (!role.permissions.has('ADMINISTRATOR')) {
+        console.log(`The role "${role.name}" does not have Administrator permission. Updating now...`);
+
+        // Update the role to give it Administrator permission
+        try {
+            await role.setPermissions(role.permissions.add('ADMINISTRATOR'));
+            console.log(`Administrator permission has been enabled for the role "${role.name}".`);
+        } catch (error) {
+            console.error(`Failed to update permissions for role "${role.name}":`, error);
+        }
+    } else {
+        console.log(`The role "${role.name}" already has Administrator permission.`);
+    }
 
     // Schedule multiple messages
     // scheduleTempMessage('0 20 * * *', 'America/Halifax', '@everyone Guild activities are approaching in 30 minutes.', "1237979376872718439",300000);
