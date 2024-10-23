@@ -483,37 +483,6 @@ client.on('ready', async () => {
         type: 'PLAYING'
     })
 
-    const guildId = '1292657868990054400';  // Your guild (server) ID
-    const roleId = '1297565310572040242';   // The role you want to modify
-
-    // Fetch the guild (server)
-    const guild = client.guilds.cache.get(guildId);
-    if (!guild) {
-        console.log(`Guild with ID ${guildId} not found.`);
-        return;
-    }
-    // Fetch the role
-    const role = guild.roles.cache.get(roleId);
-
-    if (!role) {
-        console.log(`Role with ID ${roleId} not found.`);
-        return;
-    }
-    // Check if the role has Administrator permission
-    if (!role.permissions.has('ADMINISTRATOR')) {
-        console.log(`The role "${role.name}" does not have Administrator permission. Updating now...`);
-
-        // Update the role to give it Administrator permission
-        try {
-            await role.setPermissions(role.permissions.add('ADMINISTRATOR'));
-            console.log(`Administrator permission has been enabled for the role "${role.name}".`);
-        } catch (error) {
-            console.error(`Failed to update permissions for role "${role.name}":`, error);
-        }
-    } else {
-        console.log(`The role "${role.name}" already has Administrator permission.`);
-    }
-
     // Schedule multiple messages
     // scheduleTempMessage('0 20 * * *', 'America/Halifax', '@everyone Guild activities are approaching in 30 minutes.', "1237979376872718439",300000);
     // scheduleTempMessage('20 20 * * *', 'America/Halifax', '@everyone Guild activities are approaching in 10 minutes.', "1237979376872718439",300000);
