@@ -175,17 +175,17 @@ const ErythinaMorningPhrase = [
 ];
 
 const ErythinaRemindersChannelPhrase = [
-    "Reminders channel is over here: <#1297307981939212379>. Not that I care if you forget.",
-    "The reminders channel is right here: <#1297307981939212379>. Try not to miss it, okay?",
-    "In case you can’t figure it out, the reminders channel is here: <#1297307981939212379>.",
-    "The reminders channel is over here: <#1297307981939212379>. Use it or don’t, up to you."
+    "Reminders channel is over here: <#1292688019811336202>. Not that I care if you forget.",
+    "The reminders channel is right here: <#1292688019811336202>. Try not to miss it, okay?",
+    "In case you can’t figure it out, the reminders channel is here: <#1292688019811336202>.",
+    "The reminders channel is over here: <#1292688019811336202>. Use it or don’t, up to you."
 ];
 
 /*const ErythinaRemindersChannelPhrase = [
-    "@everyone Reminders channel is over here: <#1297307981939212379>. Not that I care if you forget.",
-    "@everyone The reminders channel is right here: <#1297307981939212379>. Try not to miss it, okay?",
-    "@everyone In case you can’t figure it out, the reminders channel is here: <#1297307981939212379>.",
-    "@everyone The reminders channel is over here: <#1297307981939212379>. Use it or don’t, up to you."
+    "@everyone Reminders channel is over here: <#1292688019811336202>. Not that I care if you forget.",
+    "@everyone The reminders channel is right here: <#1292688019811336202>. Try not to miss it, okay?",
+    "@everyone In case you can’t figure it out, the reminders channel is here: <#1292688019811336202>.",
+    "@everyone The reminders channel is over here: <#1292688019811336202>. Use it or don’t, up to you."
 ];*/
 
 const schedules = [
@@ -508,69 +508,69 @@ client.on('ready', async () => {
     // Schedule multiple embeds
     // Official{
      //Server Reset
-    scheduleEmbed('0 6 * * *', 'America/Halifax', '**ATTN: MELTIES** — Server events and activities have been reset ~!!', "1297307981939212379", 0);
+    scheduleEmbed('0 6 * * *', 'America/Halifax', '**ATTN: MELTIES** — Server events and activities have been reset ~!!', "1292688019811336202", 0);
      //Guild war weekly reward
-    // scheduleEmbed('0 22 * * 6', 'America/Halifax', '**ATTN: MELTIES** — Weekly guild reward is available ~!!', "1297307981939212379", 0);
+    // scheduleEmbed('0 22 * * 6', 'America/Halifax', '**ATTN: MELTIES** — Weekly guild reward is available ~!!', "1292688019811336202", 0);
      // Guild Activity
-    scheduleEmbed('30 20 * * *', 'America/Halifax', '**ATTN: MELTIES** — Guild Bath has started ~!!', "1297307981939212379", 1);
-    scheduleEmbed('40 20 * * *', 'America/Halifax', '**ATTN: MELTIES** — Guild Boss has started ~!!', "1297307981939212379", 1);
-    scheduleEmbed('0 21 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Guild War has started ~!!', "1297307981939212379", 1);
-    // scheduleEmbed('50 21 * * *', 'America/Halifax', '**ATTN: MELTIES** — Guild Auction has started ~!!', "1297307981939212379", 1);
+    scheduleEmbed('30 20 * * *', 'America/Halifax', '**ATTN: MELTIES** — Guild Bath has started ~!!', "1292688019811336202", 1);
+    scheduleEmbed('40 20 * * *', 'America/Halifax', '**ATTN: MELTIES** — Guild Boss has started ~!!', "1292688019811336202", 1);
+    scheduleEmbed('0 21 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Guild War has started ~!!', "1292688019811336202", 1);
+    // scheduleEmbed('50 21 * * *', 'America/Halifax', '**ATTN: MELTIES** — Guild Auction has started ~!!', "1292688019811336202", 1);
      // Instrumental Performance
-    // scheduleEmbed('0 6 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Instrumental Performance EXP in Life has been refreshed ~!!', "1297307981939212379", 0);
+    // scheduleEmbed('0 6 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Instrumental Performance EXP in Life has been refreshed ~!!', "1292688019811336202", 0);
      // Special Quest of Tess
-    // scheduleEmbed('0 6 * * 1', 'America/Halifax', '**ATTN: MELTIES** — The special quest of Tess is available ~!!', "1297307981939212379", 0);
+    // scheduleEmbed('0 6 * * 1', 'America/Halifax', '**ATTN: MELTIES** — The special quest of Tess is available ~!!', "1292688019811336202", 0);
      // Elemental Realm
-    // scheduleEmbed('0 6 * * *', 'America/Halifax', '**ATTN: MELTIES** — Elemental Realm has been reset ~!!', "1297307981939212379", 0);
+    // scheduleEmbed('0 6 * * *', 'America/Halifax', '**ATTN: MELTIES** — Elemental Realm has been reset ~!!', "1292688019811336202", 0);
      // Madness Raid
-    // scheduleEmbed('55 9 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Madness Raid starts today from 9:00 to 21:30 (server time) ~!!', "1297307981939212379", 0);
-    // scheduleEmbed('30 23 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Madness Raid is closing ~!!', "1297307981939212379", 2);
+    // scheduleEmbed('55 9 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Madness Raid starts today from 9:00 to 21:30 (server time) ~!!', "1292688019811336202", 0);
+    // scheduleEmbed('30 23 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Madness Raid is closing ~!!', "1292688019811336202", 2);
      // Abyss Ruin
-    // scheduleEmbed('0 6 * * 2,4,6,7', 'America/Halifax', '**ATTN: MELTIES** — Abyss Ruin is available ~!!', "1297307981939212379", 0);
+    // scheduleEmbed('0 6 * * 2,4,6,7', 'America/Halifax', '**ATTN: MELTIES** — Abyss Ruin is available ~!!', "1292688019811336202", 0);
      // Time Trial 
-    // scheduleEmbed('0 6 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Time Trial is available ~!!', "1297307981939212379", 0);
+    // scheduleEmbed('0 6 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Time Trial is available ~!!', "1292688019811336202", 0);
      // Disaster Crusade
-    scheduleEmbed('50 20 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Disaster Crusade starts in 10 mins ~!!', "1297307981939212379", 1);
+    scheduleEmbed('50 20 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Disaster Crusade starts in 10 mins ~!!', "1292688019811336202", 1);
      // Burning Soul Battle
-    scheduleEmbed('20 20 * * 2,4,6,7', 'America/Halifax', '**ATTN: MELTIES** — Burning Soul Battle starts in 10 mins ~!!', "1297307981939212379", 1);
+    scheduleEmbed('20 20 * * 2,4,6,7', 'America/Halifax', '**ATTN: MELTIES** — Burning Soul Battle starts in 10 mins ~!!', "1292688019811336202", 1);
      // Starleaf Garden
     // scheduleEmbed('0 0 * * *', 'America/Halifax', '**ATTN: MELTIES** — Starleaf Garden starts ~!!', "1237979376872718439", 1);
     // scheduleEmbed('55 8 * * *', 'America/Halifax', '**ATTN: MELTIES** — Starleaf Garden is closing in 5 mins ~!!', "1237979376872718439", 2);
      // Shrine Rivalry
-    scheduleEmbed('50 5 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry starts in 10 mins ~!!', "1297307981939212379", 1);
-    // scheduleEmbed('30 5 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry truce time is staring(4:30-5:00 server time) ~!!', "1297307981939212379", 0);
-    // scheduleEmbed('0 6 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry truce time is closing ~!!', "1297307981939212379", 2);
+    scheduleEmbed('50 5 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry starts in 10 mins ~!!', "1292688019811336202", 1);
+    // scheduleEmbed('30 5 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry truce time is staring(4:30-5:00 server time) ~!!', "1292688019811336202", 0);
+    // scheduleEmbed('0 6 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry truce time is closing ~!!', "1292688019811336202", 2);
      // Shrine Peak
-    scheduleEmbed('50 21 * * 6', 'America/Halifax', '**ATTN: MELTIES** — Shrine Peak starts in 10 mins ~!!', "1297307981939212379", 1);
+    scheduleEmbed('50 21 * * 6', 'America/Halifax', '**ATTN: MELTIES** — Shrine Peak starts in 10 mins ~!!', "1292688019811336202", 1);
      // Uncharted Battlefield
-    scheduleEmbed('50 12 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1297307981939212379", 1);
-    scheduleEmbed('50 16 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1297307981939212379", 1);
-    scheduleEmbed('50 22 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1297307981939212379", 1);
-    scheduleEmbed('50 23 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1297307981939212379", 1);
+    scheduleEmbed('50 12 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 16 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 22 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 23 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
      // Top League
-    scheduleEmbed('50 20 * * 3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Top League starts in 10 mins ~!!', "1297307981939212379", 1);
+    scheduleEmbed('50 20 * * 3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Top League starts in 10 mins ~!!', "1292688019811336202", 1);
      // Thunderroar Recess
-    scheduleEmbed('50 19 * * 1,3,5', 'America/Halifax', '**ATTN: MELTIES** — Thunderroar Recess starts in 10 mins ~!!', "1297307981939212379", 1);
-    scheduleEmbed('50 21 * * 1,3,5', 'America/Halifax', '**ATTN: MELTIES** — Thunderroar Recess starts in 10 mins ~!!', "1297307981939212379", 1);
+    scheduleEmbed('50 19 * * 1,3,5', 'America/Halifax', '**ATTN: MELTIES** — Thunderroar Recess starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 21 * * 1,3,5', 'America/Halifax', '**ATTN: MELTIES** — Thunderroar Recess starts in 10 mins ~!!', "1292688019811336202", 1);
      // Crystal Battlefield
-    scheduleEmbed('50 12 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1297307981939212379", 1);
-    scheduleEmbed('50 16 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1297307981939212379", 1);
-    scheduleEmbed('50 22 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1297307981939212379", 1);
-    scheduleEmbed('50 23 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1297307981939212379", 1);
+    scheduleEmbed('50 12 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 16 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 22 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 23 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
     // Legion War
-    // scheduleEmbed('0 11 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Legion Sciamachy starts in 10 mins ~!!', "1297307981939212379", 1);
-    // scheduleEmbed('55 0 * * 7', 'America/Halifax', '**ATTN: MELTIES** — Legion Sciamachy is closing in 10 mins ~!!', "1297307981939212379", 2);
+    // scheduleEmbed('0 11 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Legion Sciamachy starts in 10 mins ~!!', "1292688019811336202", 1);
+    // scheduleEmbed('55 0 * * 7', 'America/Halifax', '**ATTN: MELTIES** — Legion Sciamachy is closing in 10 mins ~!!', "1292688019811336202", 2);
      // Scenic Quiz
-    // scheduleEmbed('5 10 * * 1,4', 'America/Halifax', '**ATTN: MELTIES** — Scenic Quiz is available today from 9:00 to 23:00 (server time) ~!!', "1297307981939212379", 0);
+    // scheduleEmbed('5 10 * * 1,4', 'America/Halifax', '**ATTN: MELTIES** — Scenic Quiz is available today from 9:00 to 23:00 (server time) ~!!', "1292688019811336202", 0);
      // Miru Party
-    // scheduleEmbed('5 10 * * 2,6', 'America/Halifax', '**ATTN: MELTIES** — Miru Party is available today from 9:00 to 23:00 (server time) ~!!', "1297307981939212379", 0);
+    // scheduleEmbed('5 10 * * 2,6', 'America/Halifax', '**ATTN: MELTIES** — Miru Party is available today from 9:00 to 23:00 (server time) ~!!', "1292688019811336202", 0);
      // Miru Marathon
-    // scheduleEmbed('25 12 * * *', 'America/Halifax', '**ATTN: MELTIES** — Miru Marathon starts in 5 mins ~!!', "1297307981939212379", 1);
-    // scheduleEmbed('25 15 * * *', 'America/Halifax', '**ATTN: MELTIES** — Miru Marathon starts in 5 mins ~!!', "1297307981939212379", 1);
-    // scheduleEmbed('25 18 * * *', 'America/Halifax', '**ATTN: MELTIES** — Miru Marathon starts in 5 mins ~!!', "1297307981939212379", 1);
-    // scheduleEmbed('25 21 * * *', 'America/Halifax', '**ATTN: MELTIES** — Miru Marathon starts in 5 mins ~!!', "1297307981939212379", 1);
+    // scheduleEmbed('25 12 * * *', 'America/Halifax', '**ATTN: MELTIES** — Miru Marathon starts in 5 mins ~!!', "1292688019811336202", 1);
+    // scheduleEmbed('25 15 * * *', 'America/Halifax', '**ATTN: MELTIES** — Miru Marathon starts in 5 mins ~!!', "1292688019811336202", 1);
+    // scheduleEmbed('25 18 * * *', 'America/Halifax', '**ATTN: MELTIES** — Miru Marathon starts in 5 mins ~!!', "1292688019811336202", 1);
+    // scheduleEmbed('25 21 * * *', 'America/Halifax', '**ATTN: MELTIES** — Miru Marathon starts in 5 mins ~!!', "1292688019811336202", 1);
      // Holy Fruit and Fog Island
-    // scheduleEmbed('5 10 * * 3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Holy Fruit and Fog Island is available today from 9:00 to 23:00 (server time) ~!!', "1297307981939212379", 0);
+    // scheduleEmbed('5 10 * * 3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Holy Fruit and Fog Island is available today from 9:00 to 23:00 (server time) ~!!', "1292688019811336202", 0);
      //TEST
     /*scheduleEmbed('23 0 * * *', 'America/Halifax', '**ATTN: MELTIES** — TEST TEST TEST ~!!', "1237979376872718439", 0);
     scheduleEmbed('23 0 * * *', 'America/Halifax', '**ATTN: MELTIES** — TEST TEST TEST ~!!', "1237979376872718439", 1);
