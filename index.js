@@ -109,7 +109,7 @@ const scheduleEmbed = (cronTime, timezone, message, channelId, status) => {
         if (channel) {
             let embed = new Discord.MessageEmbed()
                 .setDescription(message)
-                .setImage("https://ik.imagekit.io/Zedi/20250128_173805.jpg?updatedAt=1738057102829")
+                .setImage("https://ik.imagekit.io/Zedi/20250128_193631.jpg?updatedAt=1738064631421")
                 /*.setFooter("Noblese Guild");*/
                 if (status == 2){
                  embed.setColor("#EE4E4E")
