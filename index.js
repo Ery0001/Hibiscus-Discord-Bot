@@ -497,7 +497,7 @@ client.on('ready', async () => {
 
     //every 10 mins
     //scheduleRndmMessage('*/10 * * * *', 'America/Halifax', '1237979377363320916');
-    scheduleEmbed('*/1 * * * *', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    // scheduleEmbed('*/1 * * * *', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
 
     
      //Reminders of reminder channel
