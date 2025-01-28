@@ -508,13 +508,13 @@ client.on('ready', async () => {
     // Schedule multiple embeds
     // Official{
      //Server Reset
-    scheduleEmbed('0 6 * * *', 'America/Halifax', '**ATTN: MELTIES** — Server events and activities have been reset ~!!', "1292688019811336202", 0);
+    scheduleEmbed('0 6 * * *', 'America/Halifax', '**ATTN: MELTIES**\nServer events and activities have been reset ~!!', "1292688019811336202", 0);
      //Guild war weekly reward
     // scheduleEmbed('0 22 * * 6', 'America/Halifax', '**ATTN: MELTIES** — Weekly guild reward is available ~!!', "1292688019811336202", 0);
      // Guild Activity
-    scheduleEmbed('30 20 * * *', 'America/Halifax', '**ATTN: MELTIES** — Guild Bath has started ~!!', "1292688019811336202", 1);
-    scheduleEmbed('40 20 * * *', 'America/Halifax', '**ATTN: MELTIES** — Guild Boss has started ~!!', "1292688019811336202", 1);
-    scheduleEmbed('0 21 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Guild War has started ~!!', "1292688019811336202", 1);
+    scheduleEmbed('30 20 * * *', 'America/Halifax', '**ATTN: MELTIES**\nGuild Bath has started ~!!', "1292688019811336202", 1);
+    scheduleEmbed('40 20 * * *', 'America/Halifax', '**ATTN: MELTIES**\nGuild Boss has started ~!!', "1292688019811336202", 1);
+    scheduleEmbed('0 21 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES**\nGuild War has started ~!!', "1292688019811336202", 1);
     // scheduleEmbed('50 21 * * *', 'America/Halifax', '**ATTN: MELTIES** — Guild Auction has started ~!!', "1292688019811336202", 1);
      // Instrumental Performance
     // scheduleEmbed('0 6 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Instrumental Performance EXP in Life has been refreshed ~!!', "1292688019811336202", 0);
@@ -530,33 +530,33 @@ client.on('ready', async () => {
      // Time Trial 
     // scheduleEmbed('0 6 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Time Trial is available ~!!', "1292688019811336202", 0);
      // Disaster Crusade
-    scheduleEmbed('50 20 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Disaster Crusade starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 20 * * 1', 'America/Halifax', '**ATTN: MELTIES**\nDisaster Crusade starts in 10 mins ~!!', "1292688019811336202", 1);
      // Burning Soul Battle
-    scheduleEmbed('20 20 * * 2,4,6,7', 'America/Halifax', '**ATTN: MELTIES** — Burning Soul Battle starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('20 20 * * 2,4,6,7', 'America/Halifax', '**ATTN: MELTIES**\nBurning Soul Battle starts in 10 mins ~!!', "1292688019811336202", 1);
      // Starleaf Garden
     // scheduleEmbed('0 0 * * *', 'America/Halifax', '**ATTN: MELTIES** — Starleaf Garden starts ~!!', "1237979376872718439", 1);
     // scheduleEmbed('55 8 * * *', 'America/Halifax', '**ATTN: MELTIES** — Starleaf Garden is closing in 5 mins ~!!', "1237979376872718439", 2);
      // Shrine Rivalry
-    scheduleEmbed('50 5 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 5 * * 3-5', 'America/Halifax', '**ATTN: MELTIES**\nShrine Rivalry starts in 10 mins ~!!', "1292688019811336202", 1);
     // scheduleEmbed('30 5 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry truce time is staring(4:30-5:00 server time) ~!!', "1292688019811336202", 0);
     // scheduleEmbed('0 6 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry truce time is closing ~!!', "1292688019811336202", 2);
      // Shrine Peak
-    scheduleEmbed('50 21 * * 6', 'America/Halifax', '**ATTN: MELTIES** — Shrine Peak starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 21 * * 6', 'America/Halifax', '**ATTN: MELTIES**\nShrine Peak starts in 10 mins ~!!', "1292688019811336202", 1);
      // Uncharted Battlefield
-    scheduleEmbed('50 12 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
-    scheduleEmbed('50 16 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
-    scheduleEmbed('50 22 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
-    scheduleEmbed('50 23 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES** — Uncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 12 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES**\nUncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 16 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES**\nUncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 22 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES**\nUncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 23 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES**\nUncharted Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
      // Top League
-    scheduleEmbed('50 20 * * 3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Top League starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 20 * * 3,5,7', 'America/Halifax', '**ATTN: MELTIES**\nTop League starts in 10 mins ~!!', "1292688019811336202", 1);
      // Thunderroar Recess
-    scheduleEmbed('50 19 * * 1,3,5', 'America/Halifax', '**ATTN: MELTIES** — Thunderroar Recess starts in 10 mins ~!!', "1292688019811336202", 1);
-    scheduleEmbed('50 21 * * 1,3,5', 'America/Halifax', '**ATTN: MELTIES** — Thunderroar Recess starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 19 * * 1,3,5', 'America/Halifax', '**ATTN: MELTIES**\nThunderroar Recess starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 21 * * 1,3,5', 'America/Halifax', '**ATTN: MELTIES**\nThunderroar Recess starts in 10 mins ~!!', "1292688019811336202", 1);
      // Crystal Battlefield
-    scheduleEmbed('50 12 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
-    scheduleEmbed('50 16 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
-    scheduleEmbed('50 22 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
-    scheduleEmbed('50 23 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 12 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES**\nCrystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 16 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES**\nCrystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 22 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES**\nCrystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
+    scheduleEmbed('50 23 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES**\nCrystal Battlefield starts in 10 mins ~!!', "1292688019811336202", 1);
     // Legion War
     // scheduleEmbed('0 11 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Legion Sciamachy starts in 10 mins ~!!', "1292688019811336202", 1);
     // scheduleEmbed('55 0 * * 7', 'America/Halifax', '**ATTN: MELTIES** — Legion Sciamachy is closing in 10 mins ~!!', "1292688019811336202", 2);
