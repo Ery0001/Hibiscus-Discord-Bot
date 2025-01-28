@@ -530,13 +530,16 @@ client.on('ready', async () => {
      // Time Trial 
     scheduleEmbed('0 6 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Time Trial is available ~!!', "1297307981939212379", 0);
      // Disaster Crusade
-    scheduleEmbed('0 6 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Disaster Crusade has been reset ~!!', "1297307981939212379", 0);
+    scheduleEmbed('0 6 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Disaster Crusade has been refreshed ~!!', "1297307981939212379", 0);
      // Burning Soul Battle
-    scheduleEmbed('55 19 * * 2,4,6,7', 'America/Halifax', '**ATTN: MELTIES** — Burning Soul Battle is starting in 5 minutes ~!!', "1297307981939212379", 1);
+    scheduleEmbed('25 20 * * 2,4,6,7', 'America/Halifax', '**ATTN: MELTIES** — Burning Soul Battle is starting in 5 minutes ~!!', "1297307981939212379", 1);
      // Starleaf Garden
-    /*scheduleEmbed('0 6 * * 2,4,6,7', 'America/Halifax', '**ATTN: MELTIES** — Starleaf Garden is starting ~!!', "1237979376872718439", 1);*/
+    scheduleEmbed('0 0 * * *', 'America/Halifax', '**ATTN: MELTIES** — Starleaf Garden is starting ~!!', "1237979376872718439", 1);
+    scheduleEmbed('55 8 * * *', 'America/Halifax', '**ATTN: MELTIES** — Starleaf Garden is closing in 5 minutes ~!!', "1237979376872718439", 1);
      // Shrine Rivalry
     scheduleEmbed('0 6 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry is available ~!!', "1297307981939212379", 0);
+    scheduleEmbed('30 5 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry truce time is staring(4:30-5:00 server time) ~!!', "1297307981939212379", 0);
+    scheduleEmbed('0 6 * * 3-5', 'America/Halifax', '**ATTN: MELTIES** — Shrine Rivalry truce time is closing ~!!', "1297307981939212379", 0);
      // Shrine Peak
     scheduleEmbed('55 21 * * 6', 'America/Halifax', '**ATTN: MELTIES** — Shrine Peak is starting in 5 minutes ~!!', "1297307981939212379", 1);
      // Uncharted Battlefield
@@ -554,6 +557,9 @@ client.on('ready', async () => {
     scheduleEmbed('55 16 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield Second Wave is starting in 5 minutes ~!!', "1297307981939212379", 1);
     scheduleEmbed('55 22 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield Third Wave is starting in 5 minutes ~!!', "1297307981939212379", 1);
     scheduleEmbed('55 23 * * 1,3,5,7', 'America/Halifax', '**ATTN: MELTIES** — Crystal Battlefield Last Wave is starting in 5 minutes ~!!', "1297307981939212379", 1);
+    // Legion War
+    scheduleEmbed('0 11 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Legion Sciamachy is starting in 5 minutes ~!!', "1297307981939212379", 1);
+    scheduleEmbed('55 0 * * 7', 'America/Halifax', '**ATTN: MELTIES** — Legion Sciamachy is closing in 5 minutes ~!!', "1297307981939212379", 1);
      // Scenic Quiz
     scheduleEmbed('5 10 * * 1,4', 'America/Halifax', '**ATTN: MELTIES** — Scenic Quiz is available today from 9:00 to 23:00 (server time) ~!!', "1297307981939212379", 0);
      // Miru Party
