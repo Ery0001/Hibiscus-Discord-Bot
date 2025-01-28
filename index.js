@@ -112,7 +112,7 @@ const scheduleEmbed = (cronTime, timezone, message, channelId, status) => {
                 .setImage("https://ik.imagekit.io/Zedi/Picsart_25-01-28_16-23-57-774.jpg?updatedAt=1738053967896")
                 /*.setFooter("Noblese Guild");*/
                 if (status == 2){
-                 embed.setColor("#EE4E4E")
+                 embed.setColor("#F6D286")
                 } else if (status == 1){
                  embed.setColor("#A1DD70")
                 }
