@@ -498,8 +498,13 @@ client.on('ready', async () => {
     //every 10 mins
     //scheduleRndmMessage('*/10 * * * *', 'America/Halifax', '1237979377363320916');
     // scheduleEmbed('*/1 * * * *', 'America/Halifax', '**ATTN: MELTIES**\nUncharted Battlefield starts in 10 mins ~!!', "1333656769175490560", 1);
-
-    
+    scheduleEmbed('0 0 * * 1', 'America/Halifax', '# TROUBLESHOOTING\nToday is Monday\n\n\n-# ⓘ This is a test, kindly contact me if an issue occurs.', "1297307981939212379", 0);
+    scheduleEmbed('0 0 * * 2', 'America/Halifax', '# TROUBLESHOOTING\nToday is Tuesday\n\n\n-# ⓘ This is a test, kindly contact me if an issue occurs.', "1297307981939212379", 0);
+    scheduleEmbed('0 0 * * 3', 'America/Halifax', '# TROUBLESHOOTING\nToday is Wednesday\n\n\n-# ⓘ This is a test, kindly contact me if an issue occurs.', "1297307981939212379", 0);
+    scheduleEmbed('0 0 * * 4', 'America/Halifax', '# TROUBLESHOOTING\nToday is Thursday\n\n\n-# ⓘ This is a test, kindly contact me if an issue occurs.', "1297307981939212379", 0);
+    scheduleEmbed('0 0 * * 5', 'America/Halifax', '# TROUBLESHOOTING\nToday is Friday\n\n\n-# ⓘ This is a test, kindly contact me if an issue occurs.', "1297307981939212379", 0);
+    scheduleEmbed('0 0 * * 6', 'America/Halifax', '# TROUBLESHOOTING\nToday is Saturday\n\n\n-# ⓘ This is a test, kindly contact me if an issue occurs.', "1297307981939212379", 0);
+    scheduleEmbed('0 0 * * 7', 'America/Halifax', '# TROUBLESHOOTING\nToday is Sunday\n\n\n-# ⓘ This is a test, kindly contact me if an issue occurs.', "1297307981939212379", 0);
      //Reminders of reminder channel
     // scheduleRemindersChannel('0 7 * * *', 'America/Halifax', "1237979376872718439",3600000);
     //scheduleRemindersChannel('0 12 * * *', 'America/Halifax', "1237979376872718439",3600000);
