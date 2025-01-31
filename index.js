@@ -512,9 +512,9 @@ client.on('ready', async () => {
      //Guild war weekly reward
     // scheduleEmbed('0 22 * * 6', 'America/Halifax', '**ATTN: MELTIES** — Weekly guild reward is available ~!!', "1292688019811336202", 0);
      // Guild Activity
-    scheduleEmbed('30 20 * * *', 'America/Halifax', '**ATTN: MELTIES**\nGuild Bath has started ~!!', "1292688019811336202", 1);
-    scheduleEmbed('40 20 * * *', 'America/Halifax', '**ATTN: MELTIES**\nGuild Boss has started ~!!', "1292688019811336202", 1);
-    scheduleEmbed('0 21 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES**\nGuild War has started ~!!', "1292688019811336202", 1);
+    scheduleEmbed('20 20 * * *', 'America/Halifax', '**ATTN: MELTIES**\nGuild Bath & Guild Boss starts in 10 mins ~!!', "1292688019811336202", 1);
+    // scheduleEmbed('40 20 * * *', 'America/Halifax', '**ATTN: MELTIES**\nGuild Boss has started ~!!', "1292688019811336202", 1);
+    scheduleEmbed('55 20 * * 2,4,6', 'America/Halifax', '**ATTN: MELTIES**\nGuild War starts in 10 mins ~!!', "1292688019811336202", 1);
     // scheduleEmbed('50 21 * * *', 'America/Halifax', '**ATTN: MELTIES** — Guild Auction has started ~!!', "1292688019811336202", 1);
      // Instrumental Performance
     // scheduleEmbed('0 6 * * 1', 'America/Halifax', '**ATTN: MELTIES** — Instrumental Performance EXP in Life has been refreshed ~!!', "1292688019811336202", 0);
