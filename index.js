@@ -20,17 +20,12 @@ app.get("/", (req, res) => {
     res.send("Erythina is Online! (i think)");
 })
 
-const Discord = require("discord.js");
-const { Client, Intents, GatewayIntentBits, MessageEmbed } = require('discord.js');
-// const client = new Discord.Client({
-//     intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES"],
-//     allowedMentions: { parse: ['users', 'roles', 'everyone'] }
-// });
-const client = new Discord.Client({
+const { Client, GatewayIntentBits } = require('discord.js');
+const client = new Client({
     intents: [
-        Discord.IntentsBitField.Flags.Guilds, 
-        Discord.IntentsBitField.Flags.GuildMembers, 
-        Discord.IntentsBitField.Flags.GuildMessages
+        GatewayIntentBits.Guilds, 
+        GatewayIntentBits.GuildMembers, 
+        GatewayIntentBits.GuildMessages
     ],
     allowedMentions: { parse: ['users', 'roles', 'everyone'] }
 });
