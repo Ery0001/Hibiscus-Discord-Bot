@@ -600,7 +600,7 @@ client.on('ready', async () => {
 client.on('guildMemberAdd', member => {
     if (member.user.bot) return; // Avoid greeting bots
     
-    const channelId = 'YOUR_CHANNEL_ID'; // Replace with the actual channel ID
+    const channelId = '1292688019811336202'; // Replace with the actual channel ID
     const channel = client.channels.cache.get(channelId);
     const welcomeMessage = `Hello, welcome <@${member.id}> to melty ~!!`;
 
