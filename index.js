@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 const Discord = require("discord.js");
 const { Client, Intents, MessageEmbed } = require('discord.js');
 const client = new Discord.Client({
-    intents: ["GUILDS", "GUILD_MESSAGES"],
+    intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES"],
     allowedMentions: { parse: ['users', 'roles', 'everyone'] }
 });
 const fs = require("fs");
@@ -598,7 +598,9 @@ client.on('ready', async () => {
 });*/
 
 client.on('guildMemberAdd', member => {
-    const channelId = '1292688019811336202'; // Replace with the actual channel ID
+    if (member.user.bot) return; // Avoid greeting bots
+    
+    const channelId = 'YOUR_CHANNEL_ID'; // Replace with the actual channel ID
     const channel = client.channels.cache.get(channelId);
     const welcomeMessage = `Hello, welcome <@${member.id}> to melty ~!!`;
 
