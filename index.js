@@ -487,11 +487,15 @@ client.on('ready', async () => {
     // scheduleTempMessage('0 20 * * *', 'America/Halifax', '@everyone Guild activities are approaching in 30 mins.', "1237979376872718439",300000);
     // scheduleTempMessage('20 20 * * *', 'America/Halifax', '@everyone Guild activities are approaching in 10 mins.', "1237979376872718439",300000);
     
-    scheduleTempMessage('25 20 * * *', 'America/Halifax', '@everyone Time for the Guild bath in 5 mins. Join us or miss out, your loss ~!!', "1292688019811336202",600000);
+    scheduleTempMessage('25 20 * * 1,3,5,7', 'America/Halifax', '@everyone Time for Guild Bath & Boss in 5 mins ~!!', "1292688019811336202",1200000);
+    scheduleTempMessage('25 20 * * 2,4,6', 'America/Halifax', '@everyone Time for Guild Bath & Boss & Wars in 5 mins ~!!, "1292688019811336202",1200000);
+
+
+    //scheduleTempMessage('25 20 * * *', 'America/Halifax', '@everyone Time for the Guild bath in 5 mins. Join us or miss out, your loss ~!!', "1292688019811336202",600000);
     // scheduleTempMessage('30 20 * * *', 'America/Halifax', 'Guild bath starts!<:Stare_erythrina:1238029119632048159>', "1292688019811336202",300000);
-    scheduleTempMessage('35 20 * * *', 'America/Halifax', "@everyone Get ready for the Guild boss battle in 5 mins! Don't slack off now, we need everyone ~!!", "1292688019811336202",600000);
+    //scheduleTempMessage('35 20 * * *', 'America/Halifax', "@everyone Get ready for the Guild boss battle in 5 mins! Don't slack off now, we need everyone ~!!", "1292688019811336202",600000);
     // scheduleTempMessage('40 20 * * *', 'America/Halifax', 'Guild boss starts!<:Stare_erythrina:1238029119632048159>', "1292688019811336202",300000);
-    scheduleTempMessage('55 20 * * 2,4,6', 'America/Halifax', '@everyone The Guild war is about to begin in 5 mins! Prepare yourself ~!!', "1292688019811336202",1200000);
+    //scheduleTempMessage('55 20 * * 2,4,6', 'America/Halifax', '@everyone The Guild war is about to begin in 5 mins! Prepare yourself ~!!', "1292688019811336202",1200000);
     // scheduleTempMessage('0 21 * * 2,4,6', 'America/Halifax', 'Guild war starts!<:Erythrina_happy:1249365602397716540>', "1292688019811336202",900000);
     // scheduleRndmMessage('30 6 * * *', 'America/Halifax', "1237979376872718439");
 
